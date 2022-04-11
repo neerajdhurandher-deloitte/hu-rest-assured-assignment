@@ -7,8 +7,14 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.hamcrest.Matchers;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -37,7 +43,10 @@ public class BaseTest{
     public String post_user_endpoint;
     public String authToken;
 
-
+    public RequestSpecification requestSpecification;
+    public RequestSpecBuilder requestSpecBuilder = new RequestSpecBuilder();
+    public ResponseSpecification responseSpecification;
+    public ResponseSpecBuilder responseSpecBuilder = new ResponseSpecBuilder();
 
 
     @BeforeTest
@@ -112,7 +121,7 @@ public class BaseTest{
 
     public Map<String,String> getUser(){
 
-        User user = userList.get(0);
+        User user = userList.get(2);
         
         Map<String, String> userData = new HashMap<>();
 
@@ -124,7 +133,13 @@ public class BaseTest{
         return userData;
     }
 
+    public RequestSpecBuilder getRequestSpecBuilder() {
+        return requestSpecBuilder.setBaseUri(base_url).setContentType(ContentType.JSON);
+    }
 
+    public ResponseSpecBuilder getResponseSpecBuilder() {
+        return responseSpecBuilder.expectContentType(ContentType.JSON);
+    }
 
     @AfterTest
     public void afterTest(){

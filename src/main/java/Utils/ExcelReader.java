@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class XlsxReader {
+public class ExcelReader {
      String filePath;
      File file;
      FileInputStream inputStream;
@@ -16,7 +16,7 @@ public class XlsxReader {
      XSSFWorkbook workbook;
      XSSFSheet workbookSheet;
 
-    public XlsxReader(String path) throws IOException {
+    public ExcelReader(String path) throws IOException {
 
         filePath = path;
 

@@ -1,62 +1,26 @@
-package RestAssured.NonBDD;
+package RestAssured;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import io.restassured.module.jsv.JsonSchemaValidator;
-import io.restassured.response.Response;
 import org.json.JSONArray;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
-import java.io.File;
 import java.util.ArrayList;
 
-import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 
-public class GetUsersTest extends NonBDDBaseTest{
-
-    Response response;
-    ExtentTest extentTest;
-    JSONArray jsonArray;
-
-    @BeforeTest
-    public void init(){
-        extentTest = extent.createTest("Get User Test");
-        extentTest.log(Status.PASS,"Test setup");
-    }
-
-    @Test
-    public void getUsers(){
-        log.info("get user details end point hit");
-
-        response = given().
-                baseUri(base_url).
-                header("Content-Type","application/json").
-                when().
-                get(get_user_endpoint).
-                then().assertThat().body(JsonSchemaValidator.
-                        matchesJsonSchema(
-                                new File("src/main/java/JsonSchema/get_user_json_schema.json")))
-                .statusCode(200).contentType("application/json; charset=utf-8").extract().response();
-
-        jsonArray = new JSONArray(response.body().jsonPath().getList("data"));
+public class BaseGetUser extends BaseTest{
 
 
-        log.info(response.body().print());
 
-
-    }
-
-
-    @Test (priority = 2)
-    public void genderValidation() {
+    public void genderValidation(JSONArray jsonArray, ExtentTest extentTest) {
 
         int flag = 1;
         for (int i = 0; i < jsonArray.length(); i++) {
+
             Object obj = jsonArray.getJSONObject(i).get("gender");
+
             if (!obj.toString().equals("male") && !obj.toString().equals("female") ) {
                 flag = 0;
                 extentTest.log(Status.FAIL,"Gender error in Response" + obj);
@@ -66,18 +30,21 @@ public class GetUsersTest extends NonBDDBaseTest{
         }
 
         assertThat(flag, is(equalTo(1)));
+
         extentTest.log(Status.PASS,"Response contains male or female gender type users");
         log.info("Response contains male or female gender type users");
 
     }
 
-    @Test (priority = 2)
-    public void domainValidation() {
+    public void domainValidation(JSONArray jsonArray, ExtentTest extentTest) {
+
         int requiredDomainCount = 0;
-        String domain_check = getProperties().getProperty("domain_check");
+        String domain_check = getProperties().getProperty("domain_check"); // .biz
 
         for (int i = 0; i < jsonArray.length(); i++) {
             Object obj = jsonArray.getJSONObject(i).get("email");
+
+            // dgsg@fafha.biz
 
             if (obj.toString().contains(domain_check)) {
                 log.info(obj);
@@ -90,12 +57,13 @@ public class GetUsersTest extends NonBDDBaseTest{
         if (requiredDomainCount < 2) {
             extentTest.log(Status.FAIL,"Domain validation error. Response contains less the 2 "+ domain_check + " domain");
             log.error("Domain validation error. Response contains less the 2 "+ domain_check + " domain");
+        }else{
+            log.info("Domain pass");
         }
 
     }
 
-    @Test (priority = 2)
-    public void idValidation() {
+    public void idValidation(JSONArray jsonArray, ExtentTest extentTest) {
 
         ArrayList<Integer> id_list = new ArrayList<>();
 
@@ -106,7 +74,7 @@ public class GetUsersTest extends NonBDDBaseTest{
 
 
             if(id_list.contains(id)){
-                log.info("error");
+                log.error("error");
                 break;
             } else{
                 log.info(id);
@@ -118,5 +86,6 @@ public class GetUsersTest extends NonBDDBaseTest{
 
 
     }
+
 
 }
