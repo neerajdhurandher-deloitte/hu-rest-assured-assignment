@@ -1,16 +1,14 @@
-package RestAssured.NonBDD;
+package RestAssured.Apis;
 
 import RestAssured.BaseTest;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
-import org.json.JSONArray;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.File;
-import java.util.HashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
@@ -52,7 +50,7 @@ public class PostUserTest extends BaseTest {
                 post(post_user_endpoint).
                 then().assertThat().body(JsonSchemaValidator.
                         matchesJsonSchema(
-                                new File("src/main/java/JsonSchema/post_user_json_schema.json")))
+                                new File("src/main/resources/JsonSchema/post_user_json_schema.json")))
                 .statusCode(201).contentType("application/json; charset=utf-8").extract().response();
 
         log.info(response.body().print());

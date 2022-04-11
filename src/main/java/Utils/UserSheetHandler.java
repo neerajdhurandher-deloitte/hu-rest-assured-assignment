@@ -5,7 +5,7 @@ import org.apache.poi.ss.usermodel.Row;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class UserSheetHandler extends XlsxReader{
+public class UserSheetHandler extends ExcelReader {
 
     ArrayList<User> userList = new ArrayList<>();
 

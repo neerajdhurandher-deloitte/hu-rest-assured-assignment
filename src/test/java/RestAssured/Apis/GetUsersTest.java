@@ -1,5 +1,6 @@
-package RestAssured.NonBDD;
+package RestAssured.Apis;
 
+import RestAssured.BaseTest;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import io.restassured.module.jsv.JsonSchemaValidator;
@@ -16,7 +17,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 
-public class GetUsersTest extends NonBDDBaseTest{
+public class GetUsersTest extends BaseTest {
 
     Response response;
     ExtentTest extentTest;
@@ -39,7 +40,7 @@ public class GetUsersTest extends NonBDDBaseTest{
                 get(get_user_endpoint).
                 then().assertThat().body(JsonSchemaValidator.
                         matchesJsonSchema(
-                                new File("src/main/java/JsonSchema/get_user_json_schema.json")))
+                                new File("src/main/resources/JsonSchema/get_user_json_schema.json")))
                 .statusCode(200).contentType("application/json; charset=utf-8").extract().response();
 
         jsonArray = new JSONArray(response.body().jsonPath().getList("data"));
