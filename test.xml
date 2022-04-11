@@ -2,7 +2,7 @@
 <suite name="TestSuite" thread-count="1" >
     <test name="test">
         <classes>
-
+            <class name="RestAssured.BaseTest"></class>
         </classes>
     </test>
 </suite>
