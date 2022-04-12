@@ -6,7 +6,6 @@ import com.aventstack.extentreports.Status;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import org.json.JSONArray;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.File;
@@ -14,8 +13,7 @@ import java.util.ArrayList;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.*;
 
 public class GetUsersTest extends BaseTest {
 
@@ -23,14 +21,17 @@ public class GetUsersTest extends BaseTest {
     ExtentTest extentTest;
     JSONArray jsonArray;
 
-    @BeforeTest
-    public void init(){
-        extentTest = extent.createTest("Get User Test");
-        extentTest.log(Status.PASS,"Test setup");
-    }
+    static final int valid_flag = 1;
+
 
     @Test
     public void getUsers(){
+
+        extentTest = extent.createTest("Get User Test");
+        extentTest.log(Status.PASS,"Test setup");
+        log.info("Get User Test setup");
+
+
         log.info("get user details end point hit");
 
         response = given().
@@ -55,20 +56,31 @@ public class GetUsersTest extends BaseTest {
     @Test (priority = 2)
     public void genderValidation() {
 
-        int flag = 1;
+        int flag = valid_flag;
+
         for (int i = 0; i < jsonArray.length(); i++) {
             Object obj = jsonArray.getJSONObject(i).get("gender");
-            if (!obj.toString().equals("male") && !obj.toString().equals("female") ) {
+            if (!obj.toString().equalsIgnoreCase("male") && !obj.toString().equalsIgnoreCase("female") ) {
                 flag = 0;
                 extentTest.log(Status.FAIL,"Gender error in Response" + obj);
                 log.error("Gender error in Response"+ obj);
                 break;
             }
         }
+        try {
+            assertThat(flag, is(equalTo(valid_flag)));
 
-        assertThat(flag, is(equalTo(1)));
-        extentTest.log(Status.PASS,"Response contains male or female gender type users");
-        log.info("Response contains male or female gender type users");
+            extentTest.log(Status.PASS, "Response contains male or female gender type users");
+            log.info("Response contains male or female gender type users");
+
+        }catch (AssertionError assertionError){
+
+            log.error("Gender validation Error " + assertionError);
+            extentTest.log(Status.PASS,"Gender validation Error " + assertionError);
+
+            // this assert is add for show failed test case in console
+            assertThat(flag, is(equalTo(valid_flag)));
+        }
 
     }
 
@@ -81,16 +93,23 @@ public class GetUsersTest extends BaseTest {
             Object obj = jsonArray.getJSONObject(i).get("email");
 
             if (obj.toString().contains(domain_check)) {
-                log.info(obj);
                 requiredDomainCount++;
             }
         }
 
+        try{
+            assertThat(requiredDomainCount,greaterThan(1));
+            log.info(domain_check + " Domain validation Successful");
+            extentTest.log(Status.PASS,domain_check + " Domain validation Successful");
 
+        }catch (AssertionError assertionError){
 
-        if (requiredDomainCount < 2) {
-            extentTest.log(Status.FAIL,"Domain validation error. Response contains less the 2 "+ domain_check + " domain");
-            log.error("Domain validation error. Response contains less the 2 "+ domain_check + " domain");
+            extentTest.log(Status.FAIL,"Domain validation error. Response contains less the 2 "+ domain_check + " domain. " + assertionError);
+            log.error("Domain validation error. Response contains less the 2 "+ domain_check + " domain. " + assertionError);
+
+            // this assert is add for show failed test case in console
+            assertThat(requiredDomainCount,greaterThan(1));
+
         }
 
     }
@@ -100,20 +119,34 @@ public class GetUsersTest extends BaseTest {
 
         ArrayList<Integer> id_list = new ArrayList<>();
 
+        int flag = valid_flag;
+
         for (int i = 0; i < jsonArray.length(); i++) {
 
             Object obj = jsonArray.getJSONObject(i).get("id");
             int id = Integer.parseInt(obj.toString());
 
-
             if(id_list.contains(id)){
-                log.info("error");
+                flag = 0;
                 break;
-            } else{
-                log.info(id);
+            }else{
                 id_list.add(id);
             }
 
+        }
+
+        try {
+            assertThat(flag, is(equalTo(valid_flag)));
+            log.info("Unique Id validation successful");
+            extentTest.log(Status.PASS, "Unique Id validation successful");
+
+        }catch (AssertionError assertionError){
+
+            log.info("error :- id duplicate. " + assertionError);
+            extentTest.log(Status.FAIL, "error :- id duplicate. " + assertionError);
+
+            // this assert is add for show failed test case in console
+            assertThat(flag, is(equalTo(valid_flag)));
 
         }
 

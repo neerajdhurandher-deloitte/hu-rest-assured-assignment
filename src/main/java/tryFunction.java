@@ -1,4 +1,4 @@
-import Utils.UserSheetHandler;
+import Utils.ExcelReader;
 
 import java.io.IOException;
 
@@ -6,11 +6,11 @@ public class tryFunction {
 
     public static void main(String[] args) throws IOException {
 
-        UserSheetHandler sheetHandler = new UserSheetHandler("src/main/resources/UserDetails.xlsx");
+        ExcelReader excelReader = new ExcelReader("src/main/resources/UserDetails.xlsx");
 
-        sheetHandler.readUserFile();
+        excelReader.readUserFile();
 
-        sheetHandler.print_user_list();
+        excelReader.print_user_list();
 
     }
 }

@@ -2,7 +2,8 @@
 <suite name="TestSuite" thread-count="1" >
     <test name="test">
         <classes>
-            <class name="RestAssured.BaseTest"></class>
+            <class name="RestAssured.Apis.GetUsersTest"></class>
+            <class name="RestAssured.Apis.PostUserTest"></class>
         </classes>
     </test>
 </suite>
