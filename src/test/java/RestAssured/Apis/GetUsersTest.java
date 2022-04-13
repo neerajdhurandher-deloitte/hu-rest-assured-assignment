@@ -5,6 +5,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 import org.json.JSONArray;
 import org.testng.annotations.Test;
 
@@ -23,6 +24,9 @@ public class GetUsersTest extends BaseTest {
 
     static final int valid_flag = 1;
 
+    String successMsg;
+    String errorMsg;
+
 
     @Test
     public void getUsers(){
@@ -34,16 +38,13 @@ public class GetUsersTest extends BaseTest {
 
         log.info("get user details end point hit");
 
-        response = given().
-                baseUri(base_url).
-                header("Content-Type","application/json").
-                when().
-                get(get_user_endpoint).
-                then().assertThat().body(JsonSchemaValidator.
-                        matchesJsonSchema(
-                                new File("src/main/resources/JsonSchema/get_user_json_schema.json")))
-                .statusCode(200).contentType("application/json; charset=utf-8").extract().response();
+//        hit the get end point
+        response = super.get_request_specification().get(get_user_endpoint);
 
+        // validate  status code, json schema in response
+        response = super.responseValidation(response,200,"src/main/resources/JsonSchema/get_user_json_schema.json");
+
+        // get array to response body's data filed
         jsonArray = new JSONArray(response.body().jsonPath().getList("data"));
 
 
@@ -67,20 +68,13 @@ public class GetUsersTest extends BaseTest {
                 break;
             }
         }
-        try {
-            assertThat(flag, is(equalTo(valid_flag)));
 
-            extentTest.log(Status.PASS, "Response contains male or female gender type users");
-            log.info("Response contains male or female gender type users");
+        successMsg = "Response contains male or female gender type users";
+        errorMsg = "Gender validation Error ";
 
-        }catch (AssertionError assertionError){
 
-            log.error("Gender validation Error " + assertionError);
-            extentTest.log(Status.PASS,"Gender validation Error " + assertionError);
+        super.assertValidation(flag, valid_flag, successMsg, errorMsg,extentTest);
 
-            // this assert is add for show failed test case in console
-            assertThat(flag, is(equalTo(valid_flag)));
-        }
 
     }
 
@@ -95,22 +89,16 @@ public class GetUsersTest extends BaseTest {
             if (obj.toString().contains(domain_check)) {
                 requiredDomainCount++;
             }
+
+            if(requiredDomainCount == 2)
+                break;
         }
 
-        try{
-            assertThat(requiredDomainCount,greaterThan(1));
-            log.info(domain_check + " Domain validation Successful");
-            extentTest.log(Status.PASS,domain_check + " Domain validation Successful");
+        successMsg = domain_check + " Domain validation Successful";
+        errorMsg = "Domain validation error. Response contains less the 2 "+ domain_check + " domain. ";
 
-        }catch (AssertionError assertionError){
+        super.assertValidation(requiredDomainCount, 2, successMsg, errorMsg,extentTest);
 
-            extentTest.log(Status.FAIL,"Domain validation error. Response contains less the 2 "+ domain_check + " domain. " + assertionError);
-            log.error("Domain validation error. Response contains less the 2 "+ domain_check + " domain. " + assertionError);
-
-            // this assert is add for show failed test case in console
-            assertThat(requiredDomainCount,greaterThan(1));
-
-        }
 
     }
 
@@ -135,20 +123,11 @@ public class GetUsersTest extends BaseTest {
 
         }
 
-        try {
-            assertThat(flag, is(equalTo(valid_flag)));
-            log.info("Unique Id validation successful");
-            extentTest.log(Status.PASS, "Unique Id validation successful");
+        successMsg = "Unique Id validation successful";
+        errorMsg = "error :- id duplicate. ";
 
-        }catch (AssertionError assertionError){
+        super.assertValidation(flag, valid_flag, successMsg, errorMsg,extentTest);
 
-            log.info("error :- id duplicate. " + assertionError);
-            extentTest.log(Status.FAIL, "error :- id duplicate. " + assertionError);
-
-            // this assert is add for show failed test case in console
-            assertThat(flag, is(equalTo(valid_flag)));
-
-        }
 
 
     }

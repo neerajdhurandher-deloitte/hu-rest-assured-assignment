@@ -61,24 +61,17 @@ public class PostUserTest extends BaseTest {
     @Test(priority = 2)
     public void postUser(){
 
-        post_data = getUser();
+        post_data = getUserMapObj(userList.get(3));
 
         log.info("post user details end point hit");
 
+        response = super.get_request_specification().header("Authorization", "Bearer " + authToken).body(post_data).post(post_user_endpoint);
+
+        // validate  status code, json schema in response
+
         try {
 
-
-            response = given().
-                    baseUri(base_url).
-                    header("Content-Type", "application/json").
-                    header("Authorization", "Bearer " + authToken).
-                    body(post_data).
-                    when().
-                    post(post_user_endpoint).
-                    then().assertThat().body(JsonSchemaValidator.
-                            matchesJsonSchema(
-                                    new File("src/main/resources/JsonSchema/post_user_json_schema.json")))
-                    .statusCode(201).contentType("application/json; charset=utf-8").extract().response();
+            response = super.responseValidation(response,201,"src/main/resources/JsonSchema/post_user_json_schema.json");
 
             log.info(response.body().print());
             extentTest.log(Status.PASS,response.body().print());
@@ -86,19 +79,10 @@ public class PostUserTest extends BaseTest {
             validate_response();
 
         }catch (AssertionError assertionError){
+
             log.error(assertionError);
 
-            response = given().
-                    baseUri(base_url).
-                    header("Content-Type", "application/json").
-                    header("Authorization", "Bearer " + authToken).
-                    body(post_data).
-                    when().
-                    post(post_user_endpoint).
-                    then().assertThat().body(JsonSchemaValidator.
-                            matchesJsonSchema(
-                                    new File("src/main/resources/JsonSchema/post_error_json_schema.json")))
-                    .statusCode(422).contentType("application/json; charset=utf-8").extract().response();
+            response = super.responseValidation(response,422,"src/main/resources/JsonSchema/post_error_json_schema.json");
 
             readErrorMsg();
         }
@@ -107,17 +91,14 @@ public class PostUserTest extends BaseTest {
 
     private void validate_response() {
 
-        boolean name_validation = response.body().jsonPath().getString("data.name").equals(post_data.get("name"));
-        boolean email_validation = response.body().jsonPath().getString("data.email").equals(post_data.get("email"));
-        boolean gender_validation = response.body().jsonPath().getString("data.gender").equals(post_data.get("gender"));
-        boolean status_validation = response.body().jsonPath().getString("data.status").equals(post_data.get("status"));
+        boolean name_validation = stringMatcher("data.name", "name");
+        boolean email_validation = stringMatcher("data.email","email");
+        boolean gender_validation = stringMatcher("data.gender","gender");
+        boolean status_validation = stringMatcher("data.status","status");
 
         try {
 
-            assertThat(name_validation, is(equalTo(true)));
-            assertThat(email_validation, is(equalTo(true)));
-            assertThat(gender_validation, is(equalTo(true)));
-            assertThat(status_validation, is(equalTo(true)));
+            assertValidation(name_validation,email_validation,gender_validation,status_validation);
 
             log.info("Response is valid");
             extentTest.log(Status.PASS, "Response is valid");
@@ -128,10 +109,8 @@ public class PostUserTest extends BaseTest {
             extentTest.log(Status.PASS,"Invalid Response " +assertionError);
 
             // this assert is add for show failed test case in console
-            assertThat(name_validation, is(equalTo(true)));
-            assertThat(email_validation, is(equalTo(true)));
-            assertThat(gender_validation, is(equalTo(true)));
-            assertThat(status_validation, is(equalTo(true)));
+
+            assertValidation(name_validation,email_validation,gender_validation,status_validation);
 
         }
 
@@ -150,19 +129,20 @@ public class PostUserTest extends BaseTest {
 
     }
 
-    public Map<String,String> getUser(){
 
-        User user = userList.get(0);
-
-        Map<String, String> userData = new HashMap<>();
-
-        userData.put("name",user.getName());
-        userData.put("email",user.getEmail());
-        userData.put("gender",user.getGender());
-        userData.put("status",user.getStatus());
-
-        return userData;
+    public boolean stringMatcher(String path, String filed){
+        return  response.body().jsonPath().getString(path).equals(post_data.get(filed));
     }
+
+    private void assertValidation(boolean name_validation, boolean email_validation, boolean gender_validation, boolean status_validation) {
+        assertThat(name_validation, is(equalTo(true)));
+        assertThat(email_validation, is(equalTo(true)));
+        assertThat(gender_validation, is(equalTo(true)));
+        assertThat(status_validation, is(equalTo(true)));
+    }
+
+
+
 
 
 }

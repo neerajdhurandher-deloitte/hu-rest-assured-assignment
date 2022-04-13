@@ -1,175 +1,170 @@
-2022-04-12 11:25:54,810  INFO [main] BaseTest:54 - Base test initialized
-2022-04-12 11:25:54,827  INFO [main] BaseTest:32 - Get User Test setup
-2022-04-12 11:25:54,827  INFO [main] BaseTest:35 - get user details end point hit
-2022-04-12 11:25:55,683 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://gorest.co.in:443
-2022-04-12 11:25:55,691 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to gorest.co.in:443
-2022-04-12 11:25:56,174 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2022-04-12 11:25:56,176 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2022-04-12 11:25:56,176 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2022-04-12 11:25:56,176 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2022-04-12 11:25:56,177 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
-2022-04-12 11:25:56,177 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /public/v1/users HTTP/1.1
-2022-04-12 11:25:56,177 DEBUG [main] wire:73 -  >> "GET /public/v1/users HTTP/1.1[\r][\n]"
-2022-04-12 11:25:56,178 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2022-04-12 11:25:56,178 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
-2022-04-12 11:25:56,178 DEBUG [main] wire:73 -  >> "Host: gorest.co.in[\r][\n]"
-2022-04-12 11:25:56,178 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2022-04-12 11:25:56,179 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)[\r][\n]"
-2022-04-12 11:25:56,179 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2022-04-12 11:25:56,179 DEBUG [main] wire:73 -  >> "[\r][\n]"
-2022-04-12 11:25:56,179 DEBUG [main] headers:278 - >> GET /public/v1/users HTTP/1.1
-2022-04-12 11:25:56,179 DEBUG [main] headers:281 - >> Content-Type: application/json
-2022-04-12 11:25:56,179 DEBUG [main] headers:281 - >> Accept: */*
-2022-04-12 11:25:56,179 DEBUG [main] headers:281 - >> Host: gorest.co.in
-2022-04-12 11:25:56,180 DEBUG [main] headers:281 - >> Connection: Keep-Alive
-2022-04-12 11:25:56,180 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
-2022-04-12 11:25:56,181 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
-2022-04-12 11:25:56,272 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2022-04-12 11:25:56,276 DEBUG [main] wire:73 -  << "Server: nginx[\r][\n]"
-2022-04-12 11:25:56,276 DEBUG [main] wire:73 -  << "Date: Tue, 12 Apr 2022 05:55:56 GMT[\r][\n]"
-2022-04-12 11:25:56,277 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-2022-04-12 11:25:56,277 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
-2022-04-12 11:25:56,277 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
-2022-04-12 11:25:56,277 DEBUG [main] wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
-2022-04-12 11:25:56,277 DEBUG [main] wire:73 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
-2022-04-12 11:25:56,278 DEBUG [main] wire:73 -  << "X-XSS-Protection: 0[\r][\n]"
-2022-04-12 11:25:56,278 DEBUG [main] wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
-2022-04-12 11:25:56,278 DEBUG [main] wire:73 -  << "X-Download-Options: noopen[\r][\n]"
-2022-04-12 11:25:56,278 DEBUG [main] wire:73 -  << "X-Permitted-Cross-Domain-Policies: none[\r][\n]"
-2022-04-12 11:25:56,279 DEBUG [main] wire:73 -  << "Referrer-Policy: strict-origin-when-cross-origin[\r][\n]"
-2022-04-12 11:25:56,279 DEBUG [main] wire:73 -  << "ETag: W/"391458f6351bc55c622c743ac5aade48"[\r][\n]"
-2022-04-12 11:25:56,279 DEBUG [main] wire:73 -  << "Cache-Control: max-age=0, private, must-revalidate[\r][\n]"
-2022-04-12 11:25:56,279 DEBUG [main] wire:73 -  << "X-Request-Id: f1bec6a1-fab9-47af-a6f3-942494913b1c[\r][\n]"
-2022-04-12 11:25:56,280 DEBUG [main] wire:73 -  << "X-Runtime: 0.011743[\r][\n]"
-2022-04-12 11:25:56,280 DEBUG [main] wire:73 -  << "Strict-Transport-Security: max-age=63072000; includeSubDomains[\r][\n]"
-2022-04-12 11:25:56,280 DEBUG [main] wire:73 -  << "Vary: Origin[\r][\n]"
-2022-04-12 11:25:56,280 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
-2022-04-12 11:25:56,281 DEBUG [main] wire:73 -  << "[\r][\n]"
-2022-04-12 11:25:56,281 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2022-04-12 11:25:56,281 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
-2022-04-12 11:25:56,282 DEBUG [main] headers:265 - << Server: nginx
-2022-04-12 11:25:56,282 DEBUG [main] headers:265 - << Date: Tue, 12 Apr 2022 05:55:56 GMT
-2022-04-12 11:25:56,282 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
-2022-04-12 11:25:56,282 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
-2022-04-12 11:25:56,282 DEBUG [main] headers:265 - << Connection: keep-alive
-2022-04-12 11:25:56,282 DEBUG [main] headers:265 - << Vary: Accept-Encoding
-2022-04-12 11:25:56,282 DEBUG [main] headers:265 - << X-Frame-Options: SAMEORIGIN
-2022-04-12 11:25:56,282 DEBUG [main] headers:265 - << X-XSS-Protection: 0
-2022-04-12 11:25:56,283 DEBUG [main] headers:265 - << X-Content-Type-Options: nosniff
-2022-04-12 11:25:56,284 DEBUG [main] headers:265 - << X-Download-Options: noopen
-2022-04-12 11:25:56,284 DEBUG [main] headers:265 - << X-Permitted-Cross-Domain-Policies: none
-2022-04-12 11:25:56,284 DEBUG [main] headers:265 - << Referrer-Policy: strict-origin-when-cross-origin
-2022-04-12 11:25:56,284 DEBUG [main] headers:265 - << ETag: W/"391458f6351bc55c622c743ac5aade48"
-2022-04-12 11:25:56,284 DEBUG [main] headers:265 - << Cache-Control: max-age=0, private, must-revalidate
-2022-04-12 11:25:56,284 DEBUG [main] headers:265 - << X-Request-Id: f1bec6a1-fab9-47af-a6f3-942494913b1c
-2022-04-12 11:25:56,284 DEBUG [main] headers:265 - << X-Runtime: 0.011743
-2022-04-12 11:25:56,284 DEBUG [main] headers:265 - << Strict-Transport-Security: max-age=63072000; includeSubDomains
-2022-04-12 11:25:56,285 DEBUG [main] headers:265 - << Vary: Origin
-2022-04-12 11:25:56,285 DEBUG [main] headers:265 - << Content-Encoding: gzip
-2022-04-12 11:25:56,290 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2022-04-12 11:25:56,293 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
-2022-04-12 11:25:56,294 DEBUG [main] wire:73 -  << "376[\r][\n]"
-2022-04-12 11:25:56,294 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x9d][0x95]mo[0xdb]6[0x10][0xc7][0xbf][0x8a][0xa0][0xd7][0x96][0x1c][0xdb]Y[0xd7][0x5]([0xa6]t[0x1e][0xba],HW[0xcc][0xc5][0xde][0xc][0x3]q[0x92]."#>[0x8]|[0xb0][0x9b][0x6][0xfe][0xee];*[0x8e][0xa5][0xc4][0xd9]\[0xf7][0x9d][0xc8][0xff]Q?[0xfe][0xc9][0xbb][0xe3]C[0xaa][0xd0]Cz[0xf1][0x90]v[0xd0][0x8][\r]^[0x18][0x1d]G[0xde]x[0x90][0xe9][0xc5][0xfc][0xed][0xec][0xa7]I[0x94][0xd0][0xa5][0x17][0xb3][0xf3][0xd9][0xe3]7}NR)[0x94][0xf0][0x14]q[0x16]?u[0xeb][0xfa]X\[0xb][0x13][0xe8][[0x7])'i[0x15][0xac]EMQ)[0xf7][0xbe]s[0x17][0xd3]ic,:[0x9f]W&[0x17]z[0xda][0x85]R[0x8a]j[0xba][0x9e]M[0x83]C[0xeb]~[0x8e][0xff]~7K'[0xa9][0xc6]/[0xa7]-[0x9a][0xa7][0xdb][0xed]v[0x92][0xd6][0x10][0xbd][0xfc][0xfd][0x90][0x8a]:[0xee][0xfd][0x9c][0xf6][0xae]A[0xd1]~[0xd3]Up\Ar[0x83][0xdc][0x1a]o[0x81][0x18][0xa8]@[0x90][0xc3][0xd4][0xf5][\n]"
-2022-04-12 11:25:56,295 DEBUG [main] wire:73 -  << "S;[0xa5][0xe8][0x8c][0xa4][0xff][0xf3][0xac][\r][0x12][0x1c]1[0x15][0xc5]6[0xa8]k[0xb4][0x14]|K[0xab]$[0xd2][0x8c][0xf3][0xe0][0xa3][0xcf][0x14]*/[0xd6][0x98]n'{[0xe8][0xdb][0x1][0x8a]:O[0x96][0xd6]hH~U[0xa5][0x5][0xed][0xb9][0xb0]b[0xcc]F[0xcd][0xea][0xa8]3[0x1c][0xf4][0xa2]D[0xab]9[0xd8]:k[0x11][0xe9]h[0x9b]\[0xa3][0x1f]o[0xe2][0xe5][0x16][0xe8][0xda][0xe]6[0xf1][0xe3]~[0x13][0xc2][0x1d]-[0xb4][0xd1][0xbb][0xa6][0xbb][0x1d][0xe0]*[0x8e][0x99][0xdd][0xc9][0xc5]m[0xd0]m[0xa6][0x8d][0x4][0x9d][0x97][0xe2][0xeb][0xff][0x9b]~[0x8d][0xf8]fO[0xbc][0x16]:Y[0x9][0xb2]0v[0x1a][0xc7][0xac][0x15][0xba][0xd8][0x80][0xa7]k[0xcb]B[0xe7][0x8d]>[0xe6][0xec][0x90][0xf2][0xc3][0x9e]r[0xa9][0xca]<[0xb9][0xbc]C[0xf4][0xc9]Mh[0xb9][0xe9][0xa0][0xe6][0xf7]p?b[0x82]*[0x99][0x1a]I[0xc]bt[0xe1]*n[0xf0][0x0][0xfd]m&[0xcf][0xf7][0xf8][0x1b][0xd7][0xd8]<Y[0x85][0x1a][0xd7][0x90]\s[0xd0]zlW[0x91][0xca]\/[0xb2][0xb6][0x17][0x8b]M[0xa8]Z[0xb4]>[0xef][0xd7][0x9f][0x98]Rg{[0xec]o[0x82][0xd2]D[0xc1]=$[0x97]\[0x86][\r]H1[0xc6][0xf2]'[0x95][0xc1][0x93]Z4[0xe6][0x1e][0xbd][0xc7][0x3][0xee]Q[0xea]b[0xa8][0x9e]%[0x92][0x91][0x16]l[0xb2][0xc][0xde][0x8f][0x81][0xf5]N`u[0x14][\n]"
-2022-04-12 11:25:56,295 DEBUG [main] wire:73 -  << "/[0xa4]T[0xa0][0xb3]V[0xc8][0x12][0xaa][0x96][0xaa][0xe7][0xc4][0xbc]][0xc][0xc5][0xf3][0x87][0xb1]JHH[0xde]s[0xf0][0xc9][0xef][0xcb][0x11][0xf4][0xae]f[0xe6]Qd%[0x89][0x85]E[0xd5][0xa1][0xcc][0x8d]mN[0xa5][\r]U[0xf2][0x9e][0xb][0xf5][0xc8][0xa2][0xf8][0x17]UZF[0xad]G[0xed][0xb4][0xe2][0xd6][\n]"
-2022-04-12 11:25:56,295 DEBUG [main] wire:73 -  << "Oi[0xf4]=[0xc8]7[0xcf][0x13]x[0x15][0xb4][0xf0][0x90][0xfc]BI[0xfa][0xac]+U[0xfd][0x4][0x8b])[0xec][0xfa][0x90][0xc2]y[0x81]5[0xc9]ZS[0x17][0xbc]=[0xf9]`[0x87][0xc2][0xb9][0x6]E[0xc7][0xfa][0x91][0xb2][0xc4]&[0x9f][0xf8][0xf8]`u[0x9c]c[0x1d][0xaf]Y[0x1b]c[\n]"
-2022-04-12 11:25:56,296 DEBUG [main] wire:73 -  << "S[0x19][0xad][0xd1]f[0xa5][0xa9][0x8f][0xe7][0xcf]k[0xd0][0xa1]\>[0x80][\r]u[0xf2][0x81][0xf2]c[0xc4]k[0xe2]$kh[0xb2][0xf8][0x8a][0x4]l3+*[0xfc][0x9e]S][0x8c].[0x12][0xc0]m[0xc8][0xda]G:;D[0x7][0xe3][0x96]W[0xee]D[0xa6][0x9f][0xc4][0xd8][\r]B[0xd7][0xe1][0xf1]vp[0x8][0x9d][0xef][0xa1][0x9f][0xa8][0xec]^{[[0xe8][\n]"
-2022-04-12 11:25:56,296 DEBUG [main] wire:87 -  << "[0xf5][0xf0][0xb2]P=R[0xeb][0xcb]8[0xc8][0xb5][0xb1][0xee][0xb0][0xfb]}S[0xb]Z[0xcc][0xc6]V[0xa9]q[0xb7][0xbd]Sc[0xfa][0xcc]L[0x96][0xcb][0xd5][0xb3][0xb][0xdd]+1c4[0xab]kWX[0xa3][0xa0][0x9]h[0xe1][0xe4][0x6][0xbc]8[0x1b][0xe3][0x1b]X[0x3]9[0xbf][0x86]0[0xbe][0xd6][0x96][0x86][0x11][0xf7][0xa8]R[0xb1][0x80][0x12][0xb9]0'[[0x9d][0xf][\r][0xe8]3hz[0xa6][0xc9][0xdf]_`[0xa9]N[0xaf]F4[0xc1][0xd6]q[0x8e][0xf9]]Hqg[0xb8][0xa6][0xd3][0xcd]8[0xda][0xbe]ZN=[0xe7][0xa3]'[0x9c][0xb2]%[0x96]'[0x5][0xdb]5[0xd6]"[0xb9][0xba][0x1a][0xc3]c2[0x1][0xab][0xf6]2[0x13]B[0x14][0x9c][0xfc]Jy[0xfc]v[0xf][0xb9]C?"[0xa2]][0x8b][0xf8][0x8c]6[0xfc]Y[[0x88][0xd3][0xcc][0xc5][0xe9][0xa2][0xc6][0xaa]5[0x9b][0x97][0xe5][0xf2][0xdf][0x9c][0xb6][0xff][0x2][0xdb]q[0xd5][0xa8][0xee][0x9][0x0][0x0]"
-2022-04-12 11:25:56,296 DEBUG [main] wire:73 -  << "[\r][\n]"
-2022-04-12 11:25:56,296 DEBUG [main] wire:73 -  << "0[\r][\n]"
-2022-04-12 11:25:56,296 DEBUG [main] wire:73 -  << "[\r][\n]"
-2022-04-12 11:25:56,297 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2022-04-12 11:25:56,598 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@32faa16c
-2022-04-12 11:25:56,598 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2022-04-12 11:25:57,123  INFO [main] BaseTest:50 - {"meta":{"pagination":{"total":2819,"pages":141,"page":1,"limit":20,"links":{"previous":null,"current":"https://gorest.co.in/public/v1/users?page=1","next":"https://gorest.co.in/public/v1/users?page=2"}}},"data":[{"id":2849,"name":"Sushma Mehrotra","email":"sushma_mehrotra@pollich-kulas.com","gender":"female","status":"active"},{"id":2848,"name":"Sen. Drona Embranthiri","email":"sen_drona_embranthiri@bernhard-keeling.net","gender":"male","status":"inactive"},{"id":2847,"name":"Rajendra Menon","email":"menon_rajendra@funk-nolan.biz","gender":"female","status":"inactive"},{"id":2846,"name":"Kin Sinha","email":"sinha_kin@waters-upton.net","gender":"male","status":"active"},{"id":2845,"name":"Amb. Ajeet Mukhopadhyay","email":"amb_mukhopadhyay_ajeet@schoen.net","gender":"female","status":"inactive"},{"id":2844,"name":"Msgr. Sudeva Khanna","email":"msgr_sudeva_khanna@wuckert.name","gender":"female","status":"active"},{"id":2840,"name":"Hiranmaya Ahluwalia","email":"hiranmaya_ahluwalia@goyette.name","gender":"male","status":"active"},{"id":2839,"name":"Deevakar Dutta","email":"deevakar_dutta@tillman-kilback.co","gender":"male","status":"inactive"},{"id":2838,"name":"Oormila Bhat JD","email":"jd_oormila_bhat@rempel.org","gender":"male","status":"inactive"},{"id":2837,"name":"Bhima Bhattathiri","email":"bhima_bhattathiri@fritsch.org","gender":"male","status":"inactive"},{"id":2836,"name":"Amb. Sunita Chopra","email":"chopra_amb_sunita@stiedemann.info","gender":"male","status":"inactive"},{"id":2835,"name":"Kamla Nayar PhD","email":"nayar_phd_kamla@oconner-bode.name","gender":"male","status":"inactive"},{"id":2834,"name":"Garud Gill","email":"garud_gill@zemlak-rice.org","gender":"male","status":"inactive"},{"id":2833,"name":"Bhaaswar Nambeesan","email":"bhaaswar_nambeesan@schuppe.net","gender":"female","status":"active"},{"id":2832,"name":"Pran Mehrotra","email":"pran_mehrotra@walter-halvorson.net","gender":"female","status":"inactive"},{"id":2831,"name":"Bhadrak Namboothiri DDS","email":"namboothiri_bhadrak_dds@romaguera.net","gender":"male","status":"active"},{"id":2830,"name":"Bhagavaan Kaul","email":"kaul_bhagavaan@frami.io","gender":"female","status":"inactive"},{"id":2829,"name":"Tanushri Varma I","email":"i_varma_tanushri@johnson-hermann.net","gender":"male","status":"inactive"},{"id":2828,"name":"Swara Chaturvedi III","email":"swara_chaturvedi_iii@hamill.net","gender":"female","status":"active"},{"id":2827,"name":"Charvi Singh","email":"charvi_singh@deckow.org","gender":"female","status":"active"}]}
-2022-04-12 11:25:57,128 ERROR [main] BaseTest:108 - Domain validation error. Response contains less the 2 .biz domain. java.lang.AssertionError: 
-Expected: a value greater than <1>
-     but: <1> was equal to <1>
-2022-04-12 11:25:57,133  INFO [main] BaseTest:74 - Response contains male or female gender type users
-2022-04-12 11:25:57,133  INFO [main] BaseTest:140 - Unique Id validation successful
-2022-04-12 11:25:57,135  INFO [main] BaseTest:38 - Post User Test setup
-2022-04-12 11:25:57,715  INFO [main] BaseTest:51 - successfully read user list from excel sheet
-2022-04-12 11:25:57,717  INFO [main] BaseTest:66 - post user details end point hit
-2022-04-12 11:25:57,802 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://gorest.co.in:443
-2022-04-12 11:25:57,802 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to gorest.co.in:443
-2022-04-12 11:25:58,250 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2022-04-12 11:25:58,251 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2022-04-12 11:25:58,252 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2022-04-12 11:25:58,252 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
-2022-04-12 11:25:58,253 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /public/v1/users HTTP/1.1
-2022-04-12 11:25:58,253 DEBUG [main] wire:73 -  >> "POST /public/v1/users HTTP/1.1[\r][\n]"
-2022-04-12 11:25:58,254 DEBUG [main] wire:73 -  >> "Authorization: Bearer 1e3fbfc04d510423f16db6b1976fb8d49a339e4e486ef5006ebe118b552a2a32[\r][\n]"
-2022-04-12 11:25:58,254 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
-2022-04-12 11:25:58,254 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2022-04-12 11:25:58,255 DEBUG [main] wire:73 -  >> "Content-Length: 84[\r][\n]"
-2022-04-12 11:25:58,255 DEBUG [main] wire:73 -  >> "Host: gorest.co.in[\r][\n]"
-2022-04-12 11:25:58,255 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2022-04-12 11:25:58,256 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)[\r][\n]"
-2022-04-12 11:25:58,256 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2022-04-12 11:25:58,257 DEBUG [main] wire:73 -  >> "[\r][\n]"
-2022-04-12 11:25:58,257 DEBUG [main] headers:278 - >> POST /public/v1/users HTTP/1.1
-2022-04-12 11:25:58,257 DEBUG [main] headers:281 - >> Authorization: Bearer 1e3fbfc04d510423f16db6b1976fb8d49a339e4e486ef5006ebe118b552a2a32
-2022-04-12 11:25:58,258 DEBUG [main] headers:281 - >> Accept: */*
-2022-04-12 11:25:58,258 DEBUG [main] headers:281 - >> Content-Type: application/json
-2022-04-12 11:25:58,258 DEBUG [main] headers:281 - >> Content-Length: 84
-2022-04-12 11:25:58,258 DEBUG [main] headers:281 - >> Host: gorest.co.in
-2022-04-12 11:25:58,258 DEBUG [main] headers:281 - >> Connection: Keep-Alive
-2022-04-12 11:25:58,259 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
-2022-04-12 11:25:58,259 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
-2022-04-12 11:25:58,259 DEBUG [main] wire:87 -  >> "{"gender":"Male","name":"Ram charan","email":"ram.charan@rrr.com","status":"active"}"
-2022-04-12 11:25:58,373 DEBUG [main] wire:73 -  << "HTTP/1.1 422 Unprocessable Entity[\r][\n]"
-2022-04-12 11:25:58,374 DEBUG [main] wire:73 -  << "Server: nginx[\r][\n]"
-2022-04-12 11:25:58,374 DEBUG [main] wire:73 -  << "Date: Tue, 12 Apr 2022 05:55:58 GMT[\r][\n]"
-2022-04-12 11:25:58,374 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-2022-04-12 11:25:58,374 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
-2022-04-12 11:25:58,374 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
-2022-04-12 11:25:58,374 DEBUG [main] wire:73 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
-2022-04-12 11:25:58,374 DEBUG [main] wire:73 -  << "X-XSS-Protection: 0[\r][\n]"
-2022-04-12 11:25:58,374 DEBUG [main] wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
-2022-04-12 11:25:58,375 DEBUG [main] wire:73 -  << "X-Download-Options: noopen[\r][\n]"
-2022-04-12 11:25:58,375 DEBUG [main] wire:73 -  << "X-Permitted-Cross-Domain-Policies: none[\r][\n]"
-2022-04-12 11:25:58,375 DEBUG [main] wire:73 -  << "Referrer-Policy: strict-origin-when-cross-origin[\r][\n]"
-2022-04-12 11:25:58,375 DEBUG [main] wire:73 -  << "X-RateLimit-Limit: 90[\r][\n]"
-2022-04-12 11:25:58,375 DEBUG [main] wire:73 -  << "X-RateLimit-Remaining: 88[\r][\n]"
-2022-04-12 11:25:58,375 DEBUG [main] wire:73 -  << "X-RateLimit-Reset: 1[\r][\n]"
-2022-04-12 11:25:58,375 DEBUG [main] wire:73 -  << "Cache-Control: no-cache[\r][\n]"
-2022-04-12 11:25:58,375 DEBUG [main] wire:73 -  << "X-Request-Id: 9dd70e87-2265-4815-aa24-191cb44b491d[\r][\n]"
-2022-04-12 11:25:58,376 DEBUG [main] wire:73 -  << "X-Runtime: 0.025277[\r][\n]"
-2022-04-12 11:25:58,376 DEBUG [main] wire:73 -  << "Strict-Transport-Security: max-age=63072000; includeSubDomains[\r][\n]"
-2022-04-12 11:25:58,376 DEBUG [main] wire:73 -  << "Vary: Origin[\r][\n]"
-2022-04-12 11:25:58,376 DEBUG [main] wire:73 -  << "[\r][\n]"
-2022-04-12 11:25:58,377 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 422 Unprocessable Entity
-2022-04-12 11:25:58,377 DEBUG [main] headers:262 - << HTTP/1.1 422 Unprocessable Entity
-2022-04-12 11:25:58,377 DEBUG [main] headers:265 - << Server: nginx
-2022-04-12 11:25:58,377 DEBUG [main] headers:265 - << Date: Tue, 12 Apr 2022 05:55:58 GMT
-2022-04-12 11:25:58,377 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
-2022-04-12 11:25:58,377 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
-2022-04-12 11:25:58,377 DEBUG [main] headers:265 - << Connection: keep-alive
-2022-04-12 11:25:58,377 DEBUG [main] headers:265 - << X-Frame-Options: SAMEORIGIN
-2022-04-12 11:25:58,377 DEBUG [main] headers:265 - << X-XSS-Protection: 0
-2022-04-12 11:25:58,377 DEBUG [main] headers:265 - << X-Content-Type-Options: nosniff
-2022-04-12 11:25:58,378 DEBUG [main] headers:265 - << X-Download-Options: noopen
-2022-04-12 11:25:58,378 DEBUG [main] headers:265 - << X-Permitted-Cross-Domain-Policies: none
-2022-04-12 11:25:58,378 DEBUG [main] headers:265 - << Referrer-Policy: strict-origin-when-cross-origin
-2022-04-12 11:25:58,378 DEBUG [main] headers:265 - << X-RateLimit-Limit: 90
-2022-04-12 11:25:58,378 DEBUG [main] headers:265 - << X-RateLimit-Remaining: 88
-2022-04-12 11:25:58,378 DEBUG [main] headers:265 - << X-RateLimit-Reset: 1
-2022-04-12 11:25:58,378 DEBUG [main] headers:265 - << Cache-Control: no-cache
-2022-04-12 11:25:58,378 DEBUG [main] headers:265 - << X-Request-Id: 9dd70e87-2265-4815-aa24-191cb44b491d
-2022-04-12 11:25:58,378 DEBUG [main] headers:265 - << X-Runtime: 0.025277
-2022-04-12 11:25:58,378 DEBUG [main] headers:265 - << Strict-Transport-Security: max-age=63072000; includeSubDomains
-2022-04-12 11:25:58,379 DEBUG [main] headers:265 - << Vary: Origin
-2022-04-12 11:25:58,379 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2022-04-12 11:25:58,379 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
-2022-04-12 11:25:58,379 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2022-04-12 11:25:58,382 DEBUG [main] wire:73 -  << "4b[\r][\n]"
-2022-04-12 11:25:58,383 DEBUG [main] wire:87 -  << "{"meta":null,"data":[{"field":"email","message":"has already been taken"}]}"
-2022-04-12 11:25:58,383 DEBUG [main] wire:73 -  << "[\r][\n]"
-2022-04-12 11:25:58,383 DEBUG [main] wire:73 -  << "0[\r][\n]"
-2022-04-12 11:25:58,383 DEBUG [main] wire:73 -  << "[\r][\n]"
-2022-04-12 11:25:58,383 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2b9ecd05
-2022-04-12 11:25:58,383 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2022-04-12 11:25:58,394 ERROR [main] BaseTest:89 - java.lang.AssertionError: 1 expectation failed.
+2022-04-13 11:04:00,116  INFO [main] BaseTest:67 - Base test initialized
+2022-04-13 11:04:00,132  INFO [main] BaseTest:36 - Get User Test setup
+2022-04-13 11:04:00,132  INFO [main] BaseTest:39 - get user details end point hit
+2022-04-13 11:04:00,972 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://gorest.co.in:443
+2022-04-13 11:04:01,210 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to gorest.co.in:443
+2022-04-13 11:04:01,693 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-04-13 11:04:01,694 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-04-13 11:04:01,694 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2022-04-13 11:04:01,694 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-04-13 11:04:01,695 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2022-04-13 11:04:01,695 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /public/v1/users HTTP/1.1
+2022-04-13 11:04:01,695 DEBUG [main] wire:73 -  >> "GET /public/v1/users HTTP/1.1[\r][\n]"
+2022-04-13 11:04:01,695 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2022-04-13 11:04:01,696 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-04-13 11:04:01,696 DEBUG [main] wire:73 -  >> "Host: gorest.co.in[\r][\n]"
+2022-04-13 11:04:01,696 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-04-13 11:04:01,697 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)[\r][\n]"
+2022-04-13 11:04:01,697 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-04-13 11:04:01,697 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-04-13 11:04:01,697 DEBUG [main] headers:278 - >> GET /public/v1/users HTTP/1.1
+2022-04-13 11:04:01,697 DEBUG [main] headers:281 - >> Content-Type: application/json
+2022-04-13 11:04:01,697 DEBUG [main] headers:281 - >> Accept: */*
+2022-04-13 11:04:01,698 DEBUG [main] headers:281 - >> Host: gorest.co.in
+2022-04-13 11:04:01,698 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-04-13 11:04:01,698 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+2022-04-13 11:04:01,698 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-04-13 11:04:01,795 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2022-04-13 11:04:01,797 DEBUG [main] wire:73 -  << "Server: nginx[\r][\n]"
+2022-04-13 11:04:01,798 DEBUG [main] wire:73 -  << "Date: Wed, 13 Apr 2022 05:34:01 GMT[\r][\n]"
+2022-04-13 11:04:01,798 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2022-04-13 11:04:01,798 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2022-04-13 11:04:01,799 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2022-04-13 11:04:01,799 DEBUG [main] wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2022-04-13 11:04:01,799 DEBUG [main] wire:73 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2022-04-13 11:04:01,799 DEBUG [main] wire:73 -  << "X-XSS-Protection: 0[\r][\n]"
+2022-04-13 11:04:01,799 DEBUG [main] wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2022-04-13 11:04:01,800 DEBUG [main] wire:73 -  << "X-Download-Options: noopen[\r][\n]"
+2022-04-13 11:04:01,800 DEBUG [main] wire:73 -  << "X-Permitted-Cross-Domain-Policies: none[\r][\n]"
+2022-04-13 11:04:01,800 DEBUG [main] wire:73 -  << "Referrer-Policy: strict-origin-when-cross-origin[\r][\n]"
+2022-04-13 11:04:01,800 DEBUG [main] wire:73 -  << "ETag: W/"38e5f59a4db0106d182469d15f52d1dc"[\r][\n]"
+2022-04-13 11:04:01,800 DEBUG [main] wire:73 -  << "Cache-Control: max-age=0, private, must-revalidate[\r][\n]"
+2022-04-13 11:04:01,800 DEBUG [main] wire:73 -  << "X-Request-Id: fc6cfa25-f98c-4bb7-aebb-9d9477c8e040[\r][\n]"
+2022-04-13 11:04:01,800 DEBUG [main] wire:73 -  << "X-Runtime: 0.010022[\r][\n]"
+2022-04-13 11:04:01,801 DEBUG [main] wire:73 -  << "Strict-Transport-Security: max-age=63072000; includeSubDomains[\r][\n]"
+2022-04-13 11:04:01,801 DEBUG [main] wire:73 -  << "Vary: Origin[\r][\n]"
+2022-04-13 11:04:01,801 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2022-04-13 11:04:01,801 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-04-13 11:04:01,802 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2022-04-13 11:04:01,802 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2022-04-13 11:04:01,802 DEBUG [main] headers:265 - << Server: nginx
+2022-04-13 11:04:01,802 DEBUG [main] headers:265 - << Date: Wed, 13 Apr 2022 05:34:01 GMT
+2022-04-13 11:04:01,802 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2022-04-13 11:04:01,802 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
+2022-04-13 11:04:01,802 DEBUG [main] headers:265 - << Connection: keep-alive
+2022-04-13 11:04:01,803 DEBUG [main] headers:265 - << Vary: Accept-Encoding
+2022-04-13 11:04:01,803 DEBUG [main] headers:265 - << X-Frame-Options: SAMEORIGIN
+2022-04-13 11:04:01,803 DEBUG [main] headers:265 - << X-XSS-Protection: 0
+2022-04-13 11:04:01,803 DEBUG [main] headers:265 - << X-Content-Type-Options: nosniff
+2022-04-13 11:04:01,803 DEBUG [main] headers:265 - << X-Download-Options: noopen
+2022-04-13 11:04:01,803 DEBUG [main] headers:265 - << X-Permitted-Cross-Domain-Policies: none
+2022-04-13 11:04:01,803 DEBUG [main] headers:265 - << Referrer-Policy: strict-origin-when-cross-origin
+2022-04-13 11:04:01,803 DEBUG [main] headers:265 - << ETag: W/"38e5f59a4db0106d182469d15f52d1dc"
+2022-04-13 11:04:01,804 DEBUG [main] headers:265 - << Cache-Control: max-age=0, private, must-revalidate
+2022-04-13 11:04:01,804 DEBUG [main] headers:265 - << X-Request-Id: fc6cfa25-f98c-4bb7-aebb-9d9477c8e040
+2022-04-13 11:04:01,804 DEBUG [main] headers:265 - << X-Runtime: 0.010022
+2022-04-13 11:04:01,804 DEBUG [main] headers:265 - << Strict-Transport-Security: max-age=63072000; includeSubDomains
+2022-04-13 11:04:01,804 DEBUG [main] headers:265 - << Vary: Origin
+2022-04-13 11:04:01,804 DEBUG [main] headers:265 - << Content-Encoding: gzip
+2022-04-13 11:04:01,811 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2022-04-13 11:04:01,813 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
+2022-04-13 11:04:01,814 DEBUG [main] wire:73 -  << "36f[\r][\n]"
+2022-04-13 11:04:01,814 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x9d]V][0x8f][0x9b]H[0x10][0xfc]+#[0x9e]m[0xfc][0x91]\.[0xb1][0x14][0x5][0xe7],E[0xb9][0xd3]J[0xab]l[0xe2][0x97]S4j`[0x96][0xe9]5[0xcc][0xa0][0x9e][0x1][0xdf]f[0xe5][0xff][0x9e][0x1e][0xbc][0x7][0xec][0x87][0xb2]v[0xde][0xa0][0xab]=E[0xb7][0xab][\n]"
+2022-04-13 11:04:01,815 DEBUG [main] wire:73 -  << "[0xee][0xa2]Jy[0x88]VwQ[\r][0x5][0x1a][0xf0]hM[0xb8][0xf3][0xd6]C[0x19][0xad]^-[0xde][0xbe][0x9e][0x4]H[0xb9]h[0xb5]x3?^[0xf3][0xe5]$*[0xb1]B[0x1f][0xad][0x96][0xf3]piv[0xae];[0x83]T[0x8b][0xb6][0xe1]k[0xd3][0x94][0xe5]$[0xca][0x1a]"e[0xb8]+[0xd2][0xde][0xd7]n5[0x9b][0x15][0x96][0x94][0xf3]qfc4[0xb3][0xba]IK[0xcc]f[0xed]b[0xd6]8E[0xee]C8[0xfb][0xfd]"[0x9a]DF[0xfd]w[0xde][0x8f][0x96][0xd1][0xe1]p[0x98]D9[0x84]Y[0xfe][0xbd][0x8b]0[0xe7]g_.[0xff][0xe4][0xa3][0xa0][0xe2][0xe7][0x8d]6[0x1a]<[0xa1][0xb8]P[0x9a][0xac]'`[0xe]U[0x1][0xf2][0x84]<[0xff][0xb1]$[0xf3][0xae]%I[0xa1][0xa9]R[0xc8][0xf4]TQ^[0x81][0x89][0xbb][0x3]&Q[0xa1]L[0xae]([0xf4]C[0x19][0xee][0x9d][0x7][0x1f][0x6][0x8d] [0xf3][0xd8][0xaa][0xe8]0[0xe9]Y[0xdf][0xf4][0xac][0xdf][0xf8][0x80]B[0xfc][0x3][\r][0x89][0xcf]#[0xca][0x1d][0x17]$[0xca]&[0xa0][0xc9]5hu[0x1b][0xa7][0xf8][0xe3]<[0x92]?z[0x92]-:m[0x1a][0xb1]iRp[0x1a][0xc5]fs5[0xa2][0xca]s'[0xdb][0xae]A[0xe6][0xc7][0x86][0xe4][0x6]2[0x9b]"[0xaf][0xf2][0xda][0x9e]G[0xf9]z[0x98][0xcb]i[0xe0][0xb1]jk[0xe9][0xc1]X[0xa1] [0x1b][0x6][0x93][0xbd]F[0xaf][0xf8][0x1f];[0x8f][0xe1]U[0xcf]pIp[0xb][0x85][0xd8][0x2][0xf1][0x92][0xc4][0xe7][0xf1][0xf6][0xda][0xae]&[0xeb][0xae]Cb[0xf8][0xc7][0xc8][0xdb]Ry[0x8f][0xb1]Q[0xfe]W[0x8c],[0xf0]'[0x9c][0xcb][0x9e]s[0x9d]j>R[0xac][0xb][0xa0]=[0x94][0xe2]b3"[0x85][0xe][0x93]U.[0xe1][0x8]'[0x85][0xa2][0x92]e[0xf2][0x1b]{[0x9c][0xf][0xaa][0xc4][0x1a][0xcc][0xe]H[0xac]s,[0xc6][0xa2][0xcc][0xef][0x1][0x9][0x1]H*[0xb8]U[0xe4][0x1f][0xad][0xf3]Z[0x9d]0[0xde][0xe2]]O[0xf6][0x89][0xd5][0xa6][0x9c][0x16]W:,P[0xfc]M[0xf1][0x88][0xb0]8[0x82][0xd2]u[0xa0][0xbc][0xa1][0xe0][0x3]6[0x1][0x1b][0xc3]x[0xbb]I[0x9f][0xcf]1[0xf]6X[0xdf][0xa0][0x17][0x17]@<[0xe8][0xf6]b[0xbc]T[0xae][0xcb]*[0xd4]e[[0xf1][0x90][0xb4]s/[0xce][0xf8][0x94]gp[0xc2][0xba]Jc[0xf1][0x11]J(l[0x8b]&[0x17]W[0x80][0x6]G|.[0xdc]K[0xa8]R[0x99][0xf6]M[0xc9][0x1e][0x8d][0xd7][\n]"
+2022-04-13 11:04:01,815 DEBUG [main] wire:87 -  << "9K[0xa6][0xd4][0x18][^;g[0xcd]o<[0xc6][0xe0][0x8e]K[0xa0][0x96][0x83][0xf4]G[0x8e][0x1e][0xa0]>"[0xbd][0x15][0x8b][0xc6][0xe1][0xce][0xee][0xdd][0xe][0xa7][0xad]5[0xd4][0xa8]\[0x99][0xd8]Rq[0xee][0xaa][0x7][0xdf]\[0xb1]$[0xd1][0x84][0xc8])[0x1f][0x6]N)][0x7]%9f;e[0xdc][0x13][0xdd][0x9e]&[0xa7][0xc5][0xc0][0xa4]C(k[0xf1][0x15][0xca]=[0x8c]c[0xc0][0x1d][0x1][0xe9]; I[0x9]v[0x8d][0x9b]f[0xe0]jE[0x8f]ut[0xca]b[0x7][0xbb]\[0xf2][0xc1][0xb1][0xf8][0xc2][0xb2][0x9]?[0xef][0xc2]|l[0x1a][0xba][0x7]8[0x1a][0x94][0x93]![0xd7]!![0x85][0x99]V[0xe5][0x8b].}f[0xd6][0xf9]`[0x9d][0x8f][0xc8][0xa3][0x88][0xad]bk[0x8c][0xf8][0xd2]P[0x95]m[0xa8][0xb2][0x8a]~[0x0][0x8b][0xa6]:{[0xa3][0xf3][0xb7][0x83]|[0xf3]6[0xe4][0xf]G[0xdf][\r][0xd4][0xe0][0xc7][0xba][0xb9]/q[0x1c][0x84][0x96][0xc4]y[0xb2][0xe][\r][0xb][0xd6][0xb9]g[0x86];[0x8d]xx9n[0x89][0xf7][0x6][0xe2]Sc[0xc2][0xb7][0xc0](i[0xbb][0xba],[0xba]z[0xc2]yk,[0xc5]x^[0xda][0xcd]G1[0x10][0xac]n[0x0]X4k[0xb2][0x4][0xf][0xde][0x89][0xd0][0x83][0x12][0x2](1[0xd1][0xac][0xd4]RM5[0x12][0x1b][0xf4][0xb1]-NP[0xce]|H[0x86][0xaf]`[0x9a][0xa0]K[0xf5]T[0xae]G[0x99][0xb2]Z[0xef];[0x12][0xc7]6)K[0xf5][0xd2][0xa4][0xcf][0xad]t[0xc8][0x80]/V[0xf3]4[0xe2]/[0xfe][0xa6]h[0xa8]U[0xf9]8[0x5][0xa8][0xc3]d[0xd6]c[0x89][0x83]=/w[0xca][0x9f]2[0x90][0x9d][0x1e][0xb5][0xdf][0xf]?[0x1]YW0[0x18][0xbe][0x9][0x0][0x0]"
+2022-04-13 11:04:01,815 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-04-13 11:04:01,815 DEBUG [main] wire:73 -  << "0[\r][\n]"
+2022-04-13 11:04:01,815 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-04-13 11:04:01,816 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-04-13 11:04:02,097 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5a13fcf3
+2022-04-13 11:04:02,097 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2022-04-13 11:04:02,540  INFO [main] BaseTest:51 - {"meta":{"pagination":{"total":3184,"pages":160,"page":1,"limit":20,"links":{"previous":null,"current":"https://gorest.co.in/public/v1/users?page=1","next":"https://gorest.co.in/public/v1/users?page=2"}}},"data":[{"id":3227,"name":"Dhatri Mehrotra","email":"mehrotra_dhatri@baumbach-erdman.name","gender":"male","status":"active"},{"id":3226,"name":"Umang Kaur I","email":"kaur_i_umang@fahey.biz","gender":"male","status":"active"},{"id":3225,"name":"Vishnu Dubashi DDS","email":"dds_vishnu_dubashi@jacobi.info","gender":"male","status":"active"},{"id":3224,"name":"Usha Kapoor","email":"kapoor_usha@white.co","gender":"male","status":"active"},{"id":3223,"name":"Prayag Varman II","email":"varman_prayag_ii@bartoletti.net","gender":"male","status":"inactive"},{"id":3222,"name":"Abhaya Agarwal MD","email":"abhaya_md_agarwal@gerlach.info","gender":"male","status":"active"},{"id":3220,"name":"Dipankar Adiga","email":"dipankar_adiga@mayert.co","gender":"female","status":"inactive"},{"id":3219,"name":"Gangesh Sharma Jr.","email":"gangesh_sharma_jr@bauch-trantow.biz","gender":"male","status":"inactive"},{"id":3216,"name":"Ajit Marar VM","email":"ajit_marar_vm@marks.co","gender":"female","status":"active"},{"id":3215,"name":"Amb. Balagovind Saini","email":"saini_amb_balagovind@wintheiser-runolfsson.co","gender":"female","status":"active"},{"id":3214,"name":"Parvati Dubashi","email":"parvati_dubashi@gusikowski-vonrueden.org","gender":"male","status":"inactive"},{"id":3213,"name":"Sachin Kaul","email":"kaul_sachin@dickens.info","gender":"female","status":"inactive"},{"id":3211,"name":"Shresth Talwar","email":"shresth_talwar@brakus-casper.biz","gender":"female","status":"active"},{"id":3210,"name":"Pres. Rajinder Mehra","email":"rajinder_pres_mehra@reichel.info","gender":"male","status":"inactive"},{"id":3209,"name":"Bilwa Verma","email":"bilwa_verma@wiza.com","gender":"female","status":"inactive"},{"id":3208,"name":"Advaya Prajapat","email":"prajapat_advaya@strosin-russel.info","gender":"female","status":"inactive"},{"id":3207,"name":"Vrinda Guneta","email":"vrinda_guneta@raynor.io","gender":"male","status":"active"},{"id":3206,"name":"Amaranaath Arora I","email":"amaranaath_arora_i@hickle-hirthe.org","gender":"female","status":"active"},{"id":3205,"name":"Tanushree Talwar","email":"talwar_tanushree@schiller.io","gender":"male","status":"inactive"},{"id":3204,"name":"Rohana Chaturvedi","email":"rohana_chaturvedi@sawayn-pagac.biz","gender":"male","status":"inactive"}]}
+2022-04-13 11:04:02,544  INFO [main] BaseTest:126 - .biz Domain validation Successful
+2022-04-13 11:04:02,546  INFO [main] BaseTest:126 - Response contains male or female gender type users
+2022-04-13 11:04:02,546  INFO [main] BaseTest:126 - Unique Id validation successful
+2022-04-13 11:04:02,547  INFO [main] BaseTest:38 - Post User Test setup
+2022-04-13 11:04:03,089  INFO [main] BaseTest:51 - successfully read user list from excel sheet
+2022-04-13 11:04:03,090  INFO [main] BaseTest:66 - post user details end point hit
+2022-04-13 11:04:03,167 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://gorest.co.in:443
+2022-04-13 11:04:03,167 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to gorest.co.in:443
+2022-04-13 11:04:03,544 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-04-13 11:04:03,544 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-04-13 11:04:03,544 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-04-13 11:04:03,544 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2022-04-13 11:04:03,545 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /public/v1/users HTTP/1.1
+2022-04-13 11:04:03,545 DEBUG [main] wire:73 -  >> "POST /public/v1/users HTTP/1.1[\r][\n]"
+2022-04-13 11:04:03,545 DEBUG [main] wire:73 -  >> "Authorization: Bearer 1e3fbfc04d510423f16db6b1976fb8d49a339e4e486ef5006ebe118b552a2a32[\r][\n]"
+2022-04-13 11:04:03,545 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-04-13 11:04:03,545 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2022-04-13 11:04:03,545 DEBUG [main] wire:73 -  >> "Content-Length: 93[\r][\n]"
+2022-04-13 11:04:03,545 DEBUG [main] wire:73 -  >> "Host: gorest.co.in[\r][\n]"
+2022-04-13 11:04:03,545 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-04-13 11:04:03,545 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)[\r][\n]"
+2022-04-13 11:04:03,546 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-04-13 11:04:03,546 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-04-13 11:04:03,546 DEBUG [main] headers:278 - >> POST /public/v1/users HTTP/1.1
+2022-04-13 11:04:03,546 DEBUG [main] headers:281 - >> Authorization: Bearer 1e3fbfc04d510423f16db6b1976fb8d49a339e4e486ef5006ebe118b552a2a32
+2022-04-13 11:04:03,546 DEBUG [main] headers:281 - >> Accept: */*
+2022-04-13 11:04:03,546 DEBUG [main] headers:281 - >> Content-Type: application/json
+2022-04-13 11:04:03,546 DEBUG [main] headers:281 - >> Content-Length: 93
+2022-04-13 11:04:03,546 DEBUG [main] headers:281 - >> Host: gorest.co.in
+2022-04-13 11:04:03,546 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-04-13 11:04:03,547 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+2022-04-13 11:04:03,547 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-04-13 11:04:03,547 DEBUG [main] wire:87 -  >> "{"gender":"Female","name":"Olivia Morris","email":"olivia.morrise@rrr.com","status":"active"}"
+2022-04-13 11:04:03,660 DEBUG [main] wire:73 -  << "HTTP/1.1 422 Unprocessable Entity[\r][\n]"
+2022-04-13 11:04:03,661 DEBUG [main] wire:73 -  << "Server: nginx[\r][\n]"
+2022-04-13 11:04:03,662 DEBUG [main] wire:73 -  << "Date: Wed, 13 Apr 2022 05:34:03 GMT[\r][\n]"
+2022-04-13 11:04:03,662 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2022-04-13 11:04:03,662 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2022-04-13 11:04:03,663 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2022-04-13 11:04:03,664 DEBUG [main] wire:73 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2022-04-13 11:04:03,664 DEBUG [main] wire:73 -  << "X-XSS-Protection: 0[\r][\n]"
+2022-04-13 11:04:03,664 DEBUG [main] wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2022-04-13 11:04:03,664 DEBUG [main] wire:73 -  << "X-Download-Options: noopen[\r][\n]"
+2022-04-13 11:04:03,664 DEBUG [main] wire:73 -  << "X-Permitted-Cross-Domain-Policies: none[\r][\n]"
+2022-04-13 11:04:03,664 DEBUG [main] wire:73 -  << "Referrer-Policy: strict-origin-when-cross-origin[\r][\n]"
+2022-04-13 11:04:03,664 DEBUG [main] wire:73 -  << "X-RateLimit-Limit: 90[\r][\n]"
+2022-04-13 11:04:03,666 DEBUG [main] wire:73 -  << "X-RateLimit-Remaining: 80[\r][\n]"
+2022-04-13 11:04:03,666 DEBUG [main] wire:73 -  << "X-RateLimit-Reset: 1[\r][\n]"
+2022-04-13 11:04:03,666 DEBUG [main] wire:73 -  << "Cache-Control: no-cache[\r][\n]"
+2022-04-13 11:04:03,666 DEBUG [main] wire:73 -  << "X-Request-Id: c281e3b2-ce7a-4783-ab77-86d8216794c0[\r][\n]"
+2022-04-13 11:04:03,666 DEBUG [main] wire:73 -  << "X-Runtime: 0.021912[\r][\n]"
+2022-04-13 11:04:03,666 DEBUG [main] wire:73 -  << "Strict-Transport-Security: max-age=63072000; includeSubDomains[\r][\n]"
+2022-04-13 11:04:03,666 DEBUG [main] wire:73 -  << "Vary: Origin[\r][\n]"
+2022-04-13 11:04:03,666 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-04-13 11:04:03,667 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 422 Unprocessable Entity
+2022-04-13 11:04:03,667 DEBUG [main] headers:262 - << HTTP/1.1 422 Unprocessable Entity
+2022-04-13 11:04:03,667 DEBUG [main] headers:265 - << Server: nginx
+2022-04-13 11:04:03,667 DEBUG [main] headers:265 - << Date: Wed, 13 Apr 2022 05:34:03 GMT
+2022-04-13 11:04:03,667 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2022-04-13 11:04:03,668 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
+2022-04-13 11:04:03,668 DEBUG [main] headers:265 - << Connection: keep-alive
+2022-04-13 11:04:03,669 DEBUG [main] headers:265 - << X-Frame-Options: SAMEORIGIN
+2022-04-13 11:04:03,670 DEBUG [main] headers:265 - << X-XSS-Protection: 0
+2022-04-13 11:04:03,670 DEBUG [main] headers:265 - << X-Content-Type-Options: nosniff
+2022-04-13 11:04:03,670 DEBUG [main] headers:265 - << X-Download-Options: noopen
+2022-04-13 11:04:03,670 DEBUG [main] headers:265 - << X-Permitted-Cross-Domain-Policies: none
+2022-04-13 11:04:03,670 DEBUG [main] headers:265 - << Referrer-Policy: strict-origin-when-cross-origin
+2022-04-13 11:04:03,670 DEBUG [main] headers:265 - << X-RateLimit-Limit: 90
+2022-04-13 11:04:03,670 DEBUG [main] headers:265 - << X-RateLimit-Remaining: 80
+2022-04-13 11:04:03,670 DEBUG [main] headers:265 - << X-RateLimit-Reset: 1
+2022-04-13 11:04:03,670 DEBUG [main] headers:265 - << Cache-Control: no-cache
+2022-04-13 11:04:03,670 DEBUG [main] headers:265 - << X-Request-Id: c281e3b2-ce7a-4783-ab77-86d8216794c0
+2022-04-13 11:04:03,671 DEBUG [main] headers:265 - << X-Runtime: 0.021912
+2022-04-13 11:04:03,671 DEBUG [main] headers:265 - << Strict-Transport-Security: max-age=63072000; includeSubDomains
+2022-04-13 11:04:03,671 DEBUG [main] headers:265 - << Vary: Origin
+2022-04-13 11:04:03,671 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2022-04-13 11:04:03,671 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
+2022-04-13 11:04:03,671 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-04-13 11:04:03,674 DEBUG [main] wire:73 -  << "4b[\r][\n]"
+2022-04-13 11:04:03,674 DEBUG [main] wire:87 -  << "{"meta":null,"data":[{"field":"email","message":"has already been taken"}]}"
+2022-04-13 11:04:03,674 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-04-13 11:04:03,674 DEBUG [main] wire:73 -  << "0[\r][\n]"
+2022-04-13 11:04:03,674 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-04-13 11:04:03,675 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@707f4647
+2022-04-13 11:04:03,675 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2022-04-13 11:04:03,687 ERROR [main] BaseTest:83 - java.lang.AssertionError: 1 expectation failed.
 Response body doesn't match expectation.
 Expected: The content to match the given JSON schema.
 error: instance type (array) does not match any allowed primitive type (allowed: ["object"])
@@ -183,194 +178,114 @@ error: instance type (array) does not match any allowed primitive type (allowed:
 
   Actual: {"meta":null,"data":[{"field":"email","message":"has already been taken"}]}
 
-2022-04-12 11:25:58,408 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:59183<->139.59.66.125:443 closed
-2022-04-12 11:25:58,408 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://gorest.co.in:443
-2022-04-12 11:25:58,408 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to gorest.co.in:443
-2022-04-12 11:25:58,859 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2022-04-12 11:25:58,860 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2022-04-12 11:25:58,860 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2022-04-12 11:25:58,860 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
-2022-04-12 11:25:58,861 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /public/v1/users HTTP/1.1
-2022-04-12 11:25:58,861 DEBUG [main] wire:73 -  >> "POST /public/v1/users HTTP/1.1[\r][\n]"
-2022-04-12 11:25:58,861 DEBUG [main] wire:73 -  >> "Authorization: Bearer 1e3fbfc04d510423f16db6b1976fb8d49a339e4e486ef5006ebe118b552a2a32[\r][\n]"
-2022-04-12 11:25:58,861 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
-2022-04-12 11:25:58,861 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2022-04-12 11:25:58,862 DEBUG [main] wire:73 -  >> "Content-Length: 84[\r][\n]"
-2022-04-12 11:25:58,862 DEBUG [main] wire:73 -  >> "Host: gorest.co.in[\r][\n]"
-2022-04-12 11:25:58,862 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2022-04-12 11:25:58,862 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)[\r][\n]"
-2022-04-12 11:25:58,863 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2022-04-12 11:25:58,863 DEBUG [main] wire:73 -  >> "[\r][\n]"
-2022-04-12 11:25:58,863 DEBUG [main] headers:278 - >> POST /public/v1/users HTTP/1.1
-2022-04-12 11:25:58,863 DEBUG [main] headers:281 - >> Authorization: Bearer 1e3fbfc04d510423f16db6b1976fb8d49a339e4e486ef5006ebe118b552a2a32
-2022-04-12 11:25:58,863 DEBUG [main] headers:281 - >> Accept: */*
-2022-04-12 11:25:58,863 DEBUG [main] headers:281 - >> Content-Type: application/json
-2022-04-12 11:25:58,863 DEBUG [main] headers:281 - >> Content-Length: 84
-2022-04-12 11:25:58,864 DEBUG [main] headers:281 - >> Host: gorest.co.in
-2022-04-12 11:25:58,865 DEBUG [main] headers:281 - >> Connection: Keep-Alive
-2022-04-12 11:25:58,866 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
-2022-04-12 11:25:58,866 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
-2022-04-12 11:25:58,866 DEBUG [main] wire:87 -  >> "{"gender":"Male","name":"Ram charan","email":"ram.charan@rrr.com","status":"active"}"
-2022-04-12 11:25:58,981 DEBUG [main] wire:73 -  << "HTTP/1.1 422 Unprocessable Entity[\r][\n]"
-2022-04-12 11:25:58,981 DEBUG [main] wire:73 -  << "Server: nginx[\r][\n]"
-2022-04-12 11:25:58,982 DEBUG [main] wire:73 -  << "Date: Tue, 12 Apr 2022 05:55:58 GMT[\r][\n]"
-2022-04-12 11:25:58,982 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-2022-04-12 11:25:58,982 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
-2022-04-12 11:25:58,982 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
-2022-04-12 11:25:58,982 DEBUG [main] wire:73 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
-2022-04-12 11:25:58,982 DEBUG [main] wire:73 -  << "X-XSS-Protection: 0[\r][\n]"
-2022-04-12 11:25:58,984 DEBUG [main] wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
-2022-04-12 11:25:58,984 DEBUG [main] wire:73 -  << "X-Download-Options: noopen[\r][\n]"
-2022-04-12 11:25:58,984 DEBUG [main] wire:73 -  << "X-Permitted-Cross-Domain-Policies: none[\r][\n]"
-2022-04-12 11:25:58,984 DEBUG [main] wire:73 -  << "Referrer-Policy: strict-origin-when-cross-origin[\r][\n]"
-2022-04-12 11:25:58,984 DEBUG [main] wire:73 -  << "X-RateLimit-Limit: 90[\r][\n]"
-2022-04-12 11:25:58,985 DEBUG [main] wire:73 -  << "X-RateLimit-Remaining: 89[\r][\n]"
-2022-04-12 11:25:58,985 DEBUG [main] wire:73 -  << "X-RateLimit-Reset: 2[\r][\n]"
-2022-04-12 11:25:58,985 DEBUG [main] wire:73 -  << "Cache-Control: no-cache[\r][\n]"
-2022-04-12 11:25:58,985 DEBUG [main] wire:73 -  << "X-Request-Id: 80429172-cfe7-4915-8df1-89544a230deb[\r][\n]"
-2022-04-12 11:25:58,985 DEBUG [main] wire:73 -  << "X-Runtime: 0.020372[\r][\n]"
-2022-04-12 11:25:58,985 DEBUG [main] wire:73 -  << "Strict-Transport-Security: max-age=63072000; includeSubDomains[\r][\n]"
-2022-04-12 11:25:58,985 DEBUG [main] wire:73 -  << "Vary: Origin[\r][\n]"
-2022-04-12 11:25:58,985 DEBUG [main] wire:73 -  << "[\r][\n]"
-2022-04-12 11:25:58,985 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 422 Unprocessable Entity
-2022-04-12 11:25:58,985 DEBUG [main] headers:262 - << HTTP/1.1 422 Unprocessable Entity
-2022-04-12 11:25:58,985 DEBUG [main] headers:265 - << Server: nginx
-2022-04-12 11:25:58,985 DEBUG [main] headers:265 - << Date: Tue, 12 Apr 2022 05:55:58 GMT
-2022-04-12 11:25:58,985 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
-2022-04-12 11:25:58,985 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
-2022-04-12 11:25:58,987 DEBUG [main] headers:265 - << Connection: keep-alive
-2022-04-12 11:25:58,987 DEBUG [main] headers:265 - << X-Frame-Options: SAMEORIGIN
-2022-04-12 11:25:58,987 DEBUG [main] headers:265 - << X-XSS-Protection: 0
-2022-04-12 11:25:58,987 DEBUG [main] headers:265 - << X-Content-Type-Options: nosniff
-2022-04-12 11:25:58,987 DEBUG [main] headers:265 - << X-Download-Options: noopen
-2022-04-12 11:25:58,987 DEBUG [main] headers:265 - << X-Permitted-Cross-Domain-Policies: none
-2022-04-12 11:25:58,987 DEBUG [main] headers:265 - << Referrer-Policy: strict-origin-when-cross-origin
-2022-04-12 11:25:58,987 DEBUG [main] headers:265 - << X-RateLimit-Limit: 90
-2022-04-12 11:25:58,987 DEBUG [main] headers:265 - << X-RateLimit-Remaining: 89
-2022-04-12 11:25:58,987 DEBUG [main] headers:265 - << X-RateLimit-Reset: 2
-2022-04-12 11:25:58,987 DEBUG [main] headers:265 - << Cache-Control: no-cache
-2022-04-12 11:25:58,987 DEBUG [main] headers:265 - << X-Request-Id: 80429172-cfe7-4915-8df1-89544a230deb
-2022-04-12 11:25:58,987 DEBUG [main] headers:265 - << X-Runtime: 0.020372
-2022-04-12 11:25:58,988 DEBUG [main] headers:265 - << Strict-Transport-Security: max-age=63072000; includeSubDomains
-2022-04-12 11:25:58,989 DEBUG [main] headers:265 - << Vary: Origin
-2022-04-12 11:25:58,990 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2022-04-12 11:25:58,990 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
-2022-04-12 11:25:58,990 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2022-04-12 11:25:58,992 DEBUG [main] wire:73 -  << "4b[\r][\n]"
-2022-04-12 11:25:58,993 DEBUG [main] wire:87 -  << "{"meta":null,"data":[{"field":"email","message":"has already been taken"}]}"
-2022-04-12 11:25:58,993 DEBUG [main] wire:73 -  << "[\r][\n]"
-2022-04-12 11:25:58,993 DEBUG [main] wire:73 -  << "0[\r][\n]"
-2022-04-12 11:25:58,993 DEBUG [main] wire:73 -  << "[\r][\n]"
-2022-04-12 11:25:58,993 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3bdbf8d3
-2022-04-12 11:25:58,993 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2022-04-12 11:25:59,009 ERROR [main] BaseTest:147 - io.restassured.internal.RestAssuredResponseImpl@4e51eda7
-2022-04-12 11:25:59,010 ERROR [main] BaseTest:148 - Error Message :- [email] [has already been taken]
-2022-04-12 11:25:59,010  INFO [main] BaseTest:85 - Report generated.
-2022-04-12 11:25:59,022 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/spark.spa.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,022 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/spark.spa_en_US.ftl"): Not found
-2022-04-12 11:25:59,023 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
-2022-04-12 11:25:59,024 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
-2022-04-12 11:25:59,024 DEBUG [main] cache:45 - Loading template for "spark/spark.spa.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/spark.spa.ftl"
-2022-04-12 11:25:59,059 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-variables.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,059 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-variables_en_US.ftl"): Not found
-2022-04-12 11:25:59,059 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
-2022-04-12 11:25:59,059 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
-2022-04-12 11:25:59,059 DEBUG [main] cache:45 - Loading template for "commons/commons-variables.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-variables.ftl"
-2022-04-12 11:25:59,108 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-macros.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,109 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-macros_en_US.ftl"): Not found
-2022-04-12 11:25:59,109 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
-2022-04-12 11:25:59,109 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
-2022-04-12 11:25:59,109 DEBUG [main] cache:45 - Loading template for "commons/commons-macros.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-macros.ftl"
-2022-04-12 11:25:59,112 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/attributes.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,112 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attributes_en_US.ftl"): Not found
-2022-04-12 11:25:59,112 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
-2022-04-12 11:25:59,112 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
-2022-04-12 11:25:59,112 DEBUG [main] cache:45 - Loading template for "spark/macros/attributes.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attributes.ftl"
-2022-04-12 11:25:59,115 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/log.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,115 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/log_en_US.ftl"): Not found
-2022-04-12 11:25:59,115 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
-2022-04-12 11:25:59,116 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
-2022-04-12 11:25:59,116 DEBUG [main] cache:45 - Loading template for "spark/macros/log.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/log.ftl"
-2022-04-12 11:25:59,117 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/recurse_nodes.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,117 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_US.ftl"): Not found
-2022-04-12 11:25:59,117 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
-2022-04-12 11:25:59,117 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
-2022-04-12 11:25:59,118 DEBUG [main] cache:45 - Loading template for "spark/macros/recurse_nodes.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/recurse_nodes.ftl"
-2022-04-12 11:25:59,119 DEBUG [main] cache:45 - "spark/macros/log.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
-2022-04-12 11:25:59,120 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/attr-common.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,120 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common_en_US.ftl"): Not found
-2022-04-12 11:25:59,120 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common_en.ftl"): Not found
-2022-04-12 11:25:59,120 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common.ftl"): Found
-2022-04-12 11:25:59,120 DEBUG [main] cache:45 - Loading template for "spark/macros/attr-common.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attr-common.ftl"
-2022-04-12 11:25:59,125 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/head.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,126 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/head_en_US.ftl"): Not found
-2022-04-12 11:25:59,126 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
-2022-04-12 11:25:59,126 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
-2022-04-12 11:25:59,126 DEBUG [main] cache:45 - Loading template for "spark/partials/head.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/head.ftl"
-2022-04-12 11:25:59,129 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-inject-css.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,130 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en_US.ftl"): Not found
-2022-04-12 11:25:59,130 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
-2022-04-12 11:25:59,130 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
-2022-04-12 11:25:59,130 DEBUG [main] cache:45 - Loading template for "commons/commons-inject-css.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-css.ftl"
-2022-04-12 11:25:59,131 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/navbar.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,131 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/navbar_en_US.ftl"): Not found
-2022-04-12 11:25:59,131 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
-2022-04-12 11:25:59,131 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
-2022-04-12 11:25:59,131 DEBUG [main] cache:45 - Loading template for "spark/partials/navbar.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/navbar.ftl"
-2022-04-12 11:25:59,137 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/sidenav.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,137 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en_US.ftl"): Not found
-2022-04-12 11:25:59,137 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
-2022-04-12 11:25:59,138 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
-2022-04-12 11:25:59,138 DEBUG [main] cache:45 - Loading template for "spark/partials/sidenav.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/sidenav.ftl"
-2022-04-12 11:25:59,144 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/test.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,144 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/test_en_US.ftl"): Not found
-2022-04-12 11:25:59,145 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
-2022-04-12 11:25:59,145 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
-2022-04-12 11:25:59,145 DEBUG [main] cache:45 - Loading template for "spark/partials/test.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/test.ftl"
-2022-04-12 11:25:59,154 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,154 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en_US.ftl"): Not found
-2022-04-12 11:25:59,155 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
-2022-04-12 11:25:59,155 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
-2022-04-12 11:25:59,155 DEBUG [main] cache:45 - Loading template for "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/standard-content.ftl"
-2022-04-12 11:25:59,159 DEBUG [main] cache:45 - "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
-2022-04-12 11:25:59,160 DEBUG [main] cache:45 - "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
-2022-04-12 11:25:59,161 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/exception.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,162 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/exception_en_US.ftl"): Not found
-2022-04-12 11:25:59,162 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/exception_en.ftl"): Not found
-2022-04-12 11:25:59,162 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/exception.ftl"): Found
-2022-04-12 11:25:59,162 DEBUG [main] cache:45 - Loading template for "spark/partials/exception.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/exception.ftl"
-2022-04-12 11:25:59,163 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/category.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,163 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/category_en_US.ftl"): Not found
-2022-04-12 11:25:59,164 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/category_en.ftl"): Not found
-2022-04-12 11:25:59,164 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/category.ftl"): Found
-2022-04-12 11:25:59,164 DEBUG [main] cache:45 - Loading template for "spark/partials/category.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/category.ftl"
-2022-04-12 11:25:59,165 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/device.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,165 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/device_en_US.ftl"): Not found
-2022-04-12 11:25:59,165 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/device_en.ftl"): Not found
-2022-04-12 11:25:59,165 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/device.ftl"): Found
-2022-04-12 11:25:59,166 DEBUG [main] cache:45 - Loading template for "spark/partials/device.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/device.ftl"
-2022-04-12 11:25:59,166 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/author.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,166 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/author_en_US.ftl"): Not found
-2022-04-12 11:25:59,167 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/author_en.ftl"): Not found
-2022-04-12 11:25:59,167 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/author.ftl"): Found
-2022-04-12 11:25:59,168 DEBUG [main] cache:45 - Loading template for "spark/partials/author.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/author.ftl"
-2022-04-12 11:25:59,168 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/log.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,169 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/log_en_US.ftl"): Not found
-2022-04-12 11:25:59,169 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/log_en.ftl"): Not found
-2022-04-12 11:25:59,170 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/log.ftl"): Found
-2022-04-12 11:25:59,170 DEBUG [main] cache:45 - Loading template for "spark/partials/log.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/log.ftl"
-2022-04-12 11:25:59,171 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/dashboard.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,172 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en_US.ftl"): Not found
-2022-04-12 11:25:59,172 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
-2022-04-12 11:25:59,174 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
-2022-04-12 11:25:59,174 DEBUG [main] cache:45 - Loading template for "spark/partials/dashboard.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/dashboard.ftl"
-2022-04-12 11:25:59,197 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/scripts.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,199 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/scripts_en_US.ftl"): Not found
-2022-04-12 11:25:59,200 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
-2022-04-12 11:25:59,200 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
-2022-04-12 11:25:59,200 DEBUG [main] cache:45 - Loading template for "spark/partials/scripts.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/scripts.ftl"
-2022-04-12 11:25:59,201 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed); will try to load it.
-2022-04-12 11:25:59,201 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en_US.ftl"): Not found
-2022-04-12 11:25:59,202 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
-2022-04-12 11:25:59,202 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
-2022-04-12 11:25:59,202 DEBUG [main] cache:45 - Loading template for "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl"
+2022-04-13 11:04:03,708 ERROR [main] BaseTest:126 - io.restassured.internal.RestAssuredResponseImpl@24068086
+2022-04-13 11:04:03,709 ERROR [main] BaseTest:127 - Error Message :- [email] [has already been taken]
+2022-04-13 11:04:03,709  INFO [main] BaseTest:157 - Report generated.
+2022-04-13 11:04:03,726 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/spark.spa.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,728 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/spark.spa_en_US.ftl"): Not found
+2022-04-13 11:04:03,729 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
+2022-04-13 11:04:03,729 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
+2022-04-13 11:04:03,729 DEBUG [main] cache:45 - Loading template for "spark/spark.spa.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/spark.spa.ftl"
+2022-04-13 11:04:03,775 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-variables.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,776 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-variables_en_US.ftl"): Not found
+2022-04-13 11:04:03,777 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+2022-04-13 11:04:03,778 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+2022-04-13 11:04:03,778 DEBUG [main] cache:45 - Loading template for "commons/commons-variables.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-variables.ftl"
+2022-04-13 11:04:03,844 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-macros.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,844 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-macros_en_US.ftl"): Not found
+2022-04-13 11:04:03,845 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+2022-04-13 11:04:03,845 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+2022-04-13 11:04:03,845 DEBUG [main] cache:45 - Loading template for "commons/commons-macros.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-macros.ftl"
+2022-04-13 11:04:03,848 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/attributes.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,848 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attributes_en_US.ftl"): Not found
+2022-04-13 11:04:03,848 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
+2022-04-13 11:04:03,848 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
+2022-04-13 11:04:03,848 DEBUG [main] cache:45 - Loading template for "spark/macros/attributes.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attributes.ftl"
+2022-04-13 11:04:03,849 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/log.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,850 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/log_en_US.ftl"): Not found
+2022-04-13 11:04:03,850 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
+2022-04-13 11:04:03,850 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
+2022-04-13 11:04:03,850 DEBUG [main] cache:45 - Loading template for "spark/macros/log.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/log.ftl"
+2022-04-13 11:04:03,852 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/recurse_nodes.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,852 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_US.ftl"): Not found
+2022-04-13 11:04:03,852 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
+2022-04-13 11:04:03,853 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
+2022-04-13 11:04:03,853 DEBUG [main] cache:45 - Loading template for "spark/macros/recurse_nodes.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/recurse_nodes.ftl"
+2022-04-13 11:04:03,856 DEBUG [main] cache:45 - "spark/macros/log.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-04-13 11:04:03,856 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/attr-common.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,856 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common_en_US.ftl"): Not found
+2022-04-13 11:04:03,857 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common_en.ftl"): Not found
+2022-04-13 11:04:03,857 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common.ftl"): Found
+2022-04-13 11:04:03,857 DEBUG [main] cache:45 - Loading template for "spark/macros/attr-common.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attr-common.ftl"
+2022-04-13 11:04:03,862 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/head.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,862 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/head_en_US.ftl"): Not found
+2022-04-13 11:04:03,863 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
+2022-04-13 11:04:03,863 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
+2022-04-13 11:04:03,863 DEBUG [main] cache:45 - Loading template for "spark/partials/head.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/head.ftl"
+2022-04-13 11:04:03,866 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-inject-css.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,866 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en_US.ftl"): Not found
+2022-04-13 11:04:03,866 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
+2022-04-13 11:04:03,866 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
+2022-04-13 11:04:03,867 DEBUG [main] cache:45 - Loading template for "commons/commons-inject-css.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-css.ftl"
+2022-04-13 11:04:03,867 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/navbar.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,867 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/navbar_en_US.ftl"): Not found
+2022-04-13 11:04:03,867 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
+2022-04-13 11:04:03,867 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
+2022-04-13 11:04:03,867 DEBUG [main] cache:45 - Loading template for "spark/partials/navbar.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/navbar.ftl"
+2022-04-13 11:04:03,872 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/sidenav.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,873 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en_US.ftl"): Not found
+2022-04-13 11:04:03,873 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
+2022-04-13 11:04:03,873 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
+2022-04-13 11:04:03,873 DEBUG [main] cache:45 - Loading template for "spark/partials/sidenav.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/sidenav.ftl"
+2022-04-13 11:04:03,879 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/test.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,879 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/test_en_US.ftl"): Not found
+2022-04-13 11:04:03,879 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
+2022-04-13 11:04:03,880 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
+2022-04-13 11:04:03,880 DEBUG [main] cache:45 - Loading template for "spark/partials/test.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/test.ftl"
+2022-04-13 11:04:03,887 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,888 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en_US.ftl"): Not found
+2022-04-13 11:04:03,888 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
+2022-04-13 11:04:03,888 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
+2022-04-13 11:04:03,888 DEBUG [main] cache:45 - Loading template for "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/standard-content.ftl"
+2022-04-13 11:04:03,891 DEBUG [main] cache:45 - "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-04-13 11:04:03,892 DEBUG [main] cache:45 - "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-04-13 11:04:03,893 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/exception.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,893 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/exception_en_US.ftl"): Not found
+2022-04-13 11:04:03,893 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/exception_en.ftl"): Not found
+2022-04-13 11:04:03,894 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/exception.ftl"): Found
+2022-04-13 11:04:03,894 DEBUG [main] cache:45 - Loading template for "spark/partials/exception.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/exception.ftl"
+2022-04-13 11:04:03,894 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/category.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,895 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/category_en_US.ftl"): Not found
+2022-04-13 11:04:03,895 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/category_en.ftl"): Not found
+2022-04-13 11:04:03,895 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/category.ftl"): Found
+2022-04-13 11:04:03,895 DEBUG [main] cache:45 - Loading template for "spark/partials/category.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/category.ftl"
+2022-04-13 11:04:03,896 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/device.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,896 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/device_en_US.ftl"): Not found
+2022-04-13 11:04:03,896 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/device_en.ftl"): Not found
+2022-04-13 11:04:03,896 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/device.ftl"): Found
+2022-04-13 11:04:03,896 DEBUG [main] cache:45 - Loading template for "spark/partials/device.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/device.ftl"
+2022-04-13 11:04:03,897 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/author.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,897 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/author_en_US.ftl"): Not found
+2022-04-13 11:04:03,897 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/author_en.ftl"): Not found
+2022-04-13 11:04:03,898 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/author.ftl"): Found
+2022-04-13 11:04:03,898 DEBUG [main] cache:45 - Loading template for "spark/partials/author.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/author.ftl"
+2022-04-13 11:04:03,898 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/log.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,898 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/log_en_US.ftl"): Not found
+2022-04-13 11:04:03,899 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/log_en.ftl"): Not found
+2022-04-13 11:04:03,900 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/log.ftl"): Found
+2022-04-13 11:04:03,900 DEBUG [main] cache:45 - Loading template for "spark/partials/log.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/log.ftl"
+2022-04-13 11:04:03,900 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/dashboard.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,900 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en_US.ftl"): Not found
+2022-04-13 11:04:03,901 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
+2022-04-13 11:04:03,901 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
+2022-04-13 11:04:03,901 DEBUG [main] cache:45 - Loading template for "spark/partials/dashboard.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/dashboard.ftl"
+2022-04-13 11:04:03,916 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/scripts.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,917 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/scripts_en_US.ftl"): Not found
+2022-04-13 11:04:03,917 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
+2022-04-13 11:04:03,918 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
+2022-04-13 11:04:03,918 DEBUG [main] cache:45 - Loading template for "spark/partials/scripts.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/scripts.ftl"
+2022-04-13 11:04:03,919 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed); will try to load it.
+2022-04-13 11:04:03,919 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en_US.ftl"): Not found
+2022-04-13 11:04:03,920 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
+2022-04-13 11:04:03,920 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
+2022-04-13 11:04:03,920 DEBUG [main] cache:45 - Loading template for "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/ndhurandher/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl"
